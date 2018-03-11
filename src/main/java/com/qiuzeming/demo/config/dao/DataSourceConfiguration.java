@@ -12,7 +12,6 @@ import java.beans.PropertyVetoException;
  * Created by qiuzeming on 2018/3/11.
  */
 @Configuration
-
 //配置mybatis mapper文件的扫描路径
 @MapperScan("com.qiuzeming.demo.dao")
 public class DataSourceConfiguration {
