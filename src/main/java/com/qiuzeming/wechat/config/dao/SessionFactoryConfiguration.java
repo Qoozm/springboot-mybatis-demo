@@ -28,9 +28,12 @@ public class SessionFactoryConfiguration {
     @Value("${entity_package}")
     private String entityPackage;
 
+    private final DataSource dataSource;
+
     @Autowired
-    @Qualifier("dataSource")
-    private DataSource dataSource;
+    public SessionFactoryConfiguration(@Qualifier("dataSource") DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     @Bean(name = "sqlSessionFactory")
     public SqlSessionFactoryBean createSqlSessionFactoryBean() throws IOException {
