@@ -1,6 +1,6 @@
-package com.qiuzeming.demo.service;
+package com.qiuzeming.wechat.service;
 
-import com.qiuzeming.demo.entity.Area;
+import com.qiuzeming.wechat.entity.Area;
 
 import java.util.List;
 

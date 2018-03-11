@@ -1,4 +1,4 @@
-package com.qiuzeming.demo.config.dao;
+package com.qiuzeming.wechat.config.dao;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.mybatis.spring.annotation.MapperScan;
@@ -13,7 +13,7 @@ import java.beans.PropertyVetoException;
  */
 @Configuration
 //配置mybatis mapper文件的扫描路径
-@MapperScan("com.qiuzeming.demo.dao")
+@MapperScan("com.qiuzeming.wechat.dao")
 public class DataSourceConfiguration {
 
     @Value("${jdbc.driver}")

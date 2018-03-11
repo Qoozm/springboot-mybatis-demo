@@ -1,4 +1,4 @@
-package com.qiuzeming.demo;
+package com.qiuzeming.wechat;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

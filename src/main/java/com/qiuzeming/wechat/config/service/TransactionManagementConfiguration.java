@@ -1,4 +1,4 @@
-package com.qiuzeming.demo.config.service;
+package com.qiuzeming.wechat.config.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

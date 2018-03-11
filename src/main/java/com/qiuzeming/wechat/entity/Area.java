@@ -1,4 +1,4 @@
-package com.qiuzeming.demo.entity;
+package com.qiuzeming.wechat.entity;
 
 import java.util.Date;
 

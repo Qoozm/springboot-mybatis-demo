@@ -1,28 +1,28 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qiuzeming.demo.dao.AreaDao">
+<mapper namespace="com.qiuzeming.wechat.dao.AreaDao">
 
-    <select id="queryArea" resultType="com.qiuzeming.demo.entity.Area">
+    <select id="queryArea" resultType="com.qiuzeming.wechat.entity.Area">
         SELECT area_id, area_name, priority, create_time, last_edit_time
         FROM tb_area
         ORDER BY priority
         DESC
     </select>
 
-    <select id="queryAreaById" resultType="com.qiuzeming.demo.entity.Area">
+    <select id="queryAreaById" resultType="com.qiuzeming.wechat.entity.Area">
         SELECT area_id, area_name, priority, create_time, last_edit_time
         FROM tb_area
         WHERE area_id = #{areaId}
     </select>
 
     <insert id="insertArea" useGeneratedKeys="true" keyProperty="areaId" keyColumn="area_id"
-            parameterType="com.qiuzeming.demo.entity.Area">
+            parameterType="com.qiuzeming.wechat.entity.Area">
         INSERT INTO tb_area(area_name, priority, create_time, last_edit_time)
         VALUES (#{areaName}, #{priority}, #{createTime}, #{lastEditTime})
     </insert>
 
-    <update id="updateArea" parameterType="com.qiuzeming.demo.entity.Area">
+    <update id="updateArea" parameterType="com.qiuzeming.wechat.entity.Area">
         UPDATE tb_area
         <set>
             <if test="areaName != null ">

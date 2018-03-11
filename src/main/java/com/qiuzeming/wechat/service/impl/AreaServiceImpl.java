@@ -1,8 +1,8 @@
-package com.qiuzeming.demo.service.impl;
+package com.qiuzeming.wechat.service.impl;
 
-import com.qiuzeming.demo.dao.AreaDao;
-import com.qiuzeming.demo.entity.Area;
-import com.qiuzeming.demo.service.AreaService;
+import com.qiuzeming.wechat.dao.AreaDao;
+import com.qiuzeming.wechat.entity.Area;
+import com.qiuzeming.wechat.service.AreaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
