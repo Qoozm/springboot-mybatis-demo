@@ -25,7 +25,7 @@ public class DataSourceConfiguration {
     @Value("${jdbc.password}")
     private String jdbcPassword;
 
-    @Value("jdbc.username")
+    @Value("${jdbc.username}")
     private String jdbcUsername;
 
     @Bean(name = "dataSource")
